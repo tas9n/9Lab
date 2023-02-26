@@ -1,0 +1,20 @@
+.twitter-logo {
+  display: block;
+  width: 48px;
+  height: 48px;
+  background-image: url(../../images/logo/Twitter\ social\ icons\ -\ rounded\ square\ -\ white.png);
+  background-size: contain;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 64px;
+  background-color: black;
+}
+
+.copyright {
+  color: white;
+}
