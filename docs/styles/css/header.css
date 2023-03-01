@@ -1,6 +1,12 @@
 header {
   position: sticky;
   top: 0;
+  width: 100%;
+  height: 64px;
+}
+
+#toggle-global-nav {
+  display: none;
 }
 
 .global-nav {
@@ -30,8 +36,11 @@ header {
   transition: color 0.5s, background-color 0.5s;
 }
 .global-nav__menu li a:hover {
-  color: #FFFFFF;
+  color: white;
   background-color: #1DAE35;
+}
+.global-nav__toggle-label {
+  display: none;
 }
 
 .brand-logo {
@@ -40,4 +49,46 @@ header {
   height: 48px;
   background-image: url(../../images/logo/brand_logo.png);
   background-size: contain;
+}
+
+@media screen and (max-width: 640px) {
+  .global-nav__menu {
+    position: fixed;
+    flex-direction: column;
+    top: 0;
+    right: -75%;
+    width: 75%;
+    height: 100%;
+    background-color: rgba(88, 85, 85, 0.7);
+    transition: transform 1s;
+  }
+  .global-nav__menu li a {
+    color: white;
+    border-bottom: white solid 2px;
+  }
+  .global-nav__toggle-label {
+    display: block;
+    position: fixed;
+    top: 24px;
+    right: 24px;
+    z-index: 100;
+  }
+  .global-nav__toggle-label__animation-bar {
+    display: block;
+    margin: 4px 0;
+    width: 40px;
+    height: 4px;
+    background-color: #585555;
+    border-radius: 2px;
+    transition: transform 0.75s;
+  }
+  #toggle-global-nav:checked + .global-nav__toggle-label .global-nav__toggle-label__animation-bar:first-child {
+    transform: translateY(4px) rotate(210deg);
+  }
+  #toggle-global-nav:checked + .global-nav__toggle-label .global-nav__toggle-label__animation-bar:last-child {
+    transform: translateY(-4px) rotate(330deg);
+  }
+  #toggle-global-nav:checked ~ .global-nav__menu {
+    transform: translateX(-100%);
+  }
 }
