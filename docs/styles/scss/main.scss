@@ -36,6 +36,13 @@ h1 {
 h2 {
     font-size: 48px;
 }
+h3 {
+    padding-left: 12px;
+
+    font-size: 24px;
+
+    border-left: #585555 solid 8px;
+}
 
 body {
     margin: 0;
@@ -87,13 +94,30 @@ main {
 .list-container {
     & ul {
         display: flex;
-        align-items: center;
-        justify-content: space-around;
+        align-items: flex-start;
+        justify-content: space-evenly;
 
         flex-wrap: wrap;
 
         padding: 0;
 
         list-style: none;
+    }
+}
+
+.work-introduction {
+    display: flex;
+    align-items: center;
+
+    flex-flow: column;
+
+    margin: 0;
+
+    width: 320px;
+}
+
+@media screen and (max-width: 640px) {
+    main {
+        width: 100%;
     }
 }
