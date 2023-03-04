@@ -21,7 +21,8 @@
 }
 
 h1 {
-  font-size: 64px;
+  font-size: 58px;
+  white-space: nowrap;
 }
 
 h2 {
