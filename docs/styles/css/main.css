@@ -83,7 +83,7 @@ main {
   display: flex;
   align-items: center;
   flex-flow: column;
-  margin: 0;
+  margin: 0 4px;
   width: 320px;
 }
 
