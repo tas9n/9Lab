@@ -1,6 +1,8 @@
+<!DOCTYPE html>
 <html lang="ja">
 
 <head>
+    <!-- メタタグ -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,10 +13,12 @@
 
     <title>9Lab! - きゅーらぼ！</title>
 
+    <!-- スタイル -->
     <link rel="stylesheet" href="styles/css/main.css" />
     <link rel="stylesheet" href="styles/css/header.css" />
     <link rel="stylesheet" href="styles/css/footer.css" />
 
+    <!-- スクリプト -->
     <script src="scripts/main.js" defer></script>
     <script src="scripts/scroll.js" defer></script>
 
@@ -34,15 +38,18 @@
     <div id="__making-now">このサイトは制作中です。</div>
     -->
     <header>
+        <!-- グローバルナビゲーション -->
         <nav class="global-nav">
             <a href="index.html" class="brand-logo"></a>
 
+            <!-- レスポンシブ時のボタン -->
             <input type="checkbox" id="toggle-global-nav" />
             <label for="toggle-global-nav" class="global-nav__toggle-label">
                 <span class="global-nav__toggle-label__animation-bar"></span>
                 <span class="global-nav__toggle-label__animation-bar"></span>
             </label>
 
+            <!-- ナビゲーション本体 -->
             <ul class="global-nav__menu">
                 <li><a class="scroll" href="#top">Top</a></li>
                 <li><a class="scroll" href="#about-me">About</a></li>
@@ -53,6 +60,7 @@
         </nav>
     </header>
     <main>
+        <!-- ページヒーロー -->
         <div id="top" class="page-hero">
             <h1>きゅーらぼ！</h1>
             <p class="center-align">
@@ -64,7 +72,11 @@
                 これまでに手がけた作品などをまとめています。
             </p>
         </div>
+
+        <!-- メイン -->
         <article class="main-contents">
+
+            <!-- About me -->
             <section id="about-me">
                 <h2>About Me</h2>
                 <p class="center-align">
@@ -75,6 +87,7 @@
                 </p>
             </section>
 
+            <!-- About me - profile -->
             <section id="about-profile">
                 <h2>Profile</h2>
                 <p class="center-align">
@@ -87,6 +100,7 @@
                 </p>
             </section>
 
+            <!-- works -->
             <section id="about-works">
                 <h2>Works</h2>
                 <div class="list-container">
@@ -155,6 +169,7 @@
             </section>
         </article>
     </main>
+    <!-- フッター -->
     <footer>
         <p class="copyright">
             @2023 Tasuku Nishiguchi
