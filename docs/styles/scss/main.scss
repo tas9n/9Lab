@@ -96,7 +96,7 @@ main {
     & ul {
         display: flex;
         align-items: flex-start;
-        justify-content: space-evenly;
+        justify-content: space-around;
 
         flex-wrap: wrap;
 
@@ -115,6 +115,10 @@ main {
     margin: 0 4px;
 
     width: 320px;
+
+    & figcaption{
+        width: 100%;
+    }
 
     & img{
         width: 320px;
