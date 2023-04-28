@@ -73,7 +73,7 @@ main {
 .list-container ul {
   display: flex;
   align-items: flex-start;
-  justify-content: space-evenly;
+  justify-content: space-around;
   flex-wrap: wrap;
   padding: 0;
   list-style: none;
@@ -85,6 +85,17 @@ main {
   flex-flow: column;
   margin: 0 4px;
   width: 320px;
+}
+.work-introduction figcaption {
+  width: 100%;
+}
+.work-introduction img {
+  width: 320px;
+  height: 240px;
+  transition: transform 0.25s;
+}
+.work-introduction img:hover {
+  transform: scale(1.05);
 }
 
 @media screen and (max-width: 640px) {

@@ -1,9 +1,13 @@
+<!DOCTYPE html>
 <html lang="ja">
 
 <head>
+    <!-- メタタグ -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords"
+        content="たすくん,tas9n,ポートフォリオ,きゅーらぼ！,9Lab!,プログラミング,ゲーム制作" />
 
     <!-- favicons -->
     <link rel="apple-touch-icon" type="image/png" href="apple-touch-icon-180x180.png">
@@ -11,82 +15,145 @@
 
     <title>9Lab! - きゅーらぼ！</title>
 
+     <!-- OGP -->
+     <meta name="description" content="このサイトは私、たすくんのポートフォリオサイトである9Lab!(きゅーらぼ！)です。これまでに手がけた作品などをまとめています。" />
+     <meta property="og:description" content="このサイトは私、たすくんのポートフォリオサイトである9Lab!(きゅーらぼ！)です。これまでに手がけた作品などをまとめています。" />
+     <meta property="og:url" content="https://tas9n.github.io/9Lab/" />
+     <meta property="og:image"
+         content="https://raw.githubusercontent.com/tas9n/9Lab/master/docs/images/logo/brand_logo.png" />
+     <meta name="twitter:card" content="summary" />
+
+    <!-- スタイル -->
     <link rel="stylesheet" href="styles/css/main.css" />
     <link rel="stylesheet" href="styles/css/header.css" />
     <link rel="stylesheet" href="styles/css/footer.css" />
 
-    <script src="scripts/main.js" type="module"></script>
+    <!-- スクリプト -->
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/scroll.js" defer></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6HE2F8EQ57"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-6HE2F8EQ57');
+    </script>
 </head>
 
 <body>
-    
+    <!--
     <div id="__making-now">このサイトは制作中です。</div>
-    
+    -->
     <header>
+        <!-- グローバルナビゲーション -->
         <nav class="global-nav">
             <a href="index.html" class="brand-logo"></a>
 
+            <!-- レスポンシブ時のボタン -->
             <input type="checkbox" id="toggle-global-nav" />
             <label for="toggle-global-nav" class="global-nav__toggle-label">
                 <span class="global-nav__toggle-label__animation-bar"></span>
                 <span class="global-nav__toggle-label__animation-bar"></span>
             </label>
 
+            <!-- ナビゲーション本体 -->
             <ul class="global-nav__menu">
-                <li><a href="#top">Top</a></li>
-                <li><a href="#about-me">About</a></li>
+                <li><a class="scroll" href="#top">Top</a></li>
+                <li><a class="scroll" href="#about-me">About</a></li>
+                <li><a class="scroll" href="#about-works">Works</a></li>
                 <li><a href="">Blog</a></li>
-                <li><a href="#about-works">Works</a></li>
                 <li><a href="https://twitter.com/23_tas9" target="_blank" rel="noopener noreferrer">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
+        <!-- ページヒーロー -->
         <div id="top" class="page-hero">
             <h1>きゅーらぼ！</h1>
             <p class="center-align">
                 This is tas9n's Laboratory.
             </p>
             <p class="center-align">
-                このサイトは私たすくんのポートフォリオサイトです。<br />
+                このサイトは私、たすくんの<br />
+                ポートフォリオサイトです。<br />
                 これまでに手がけた作品などをまとめています。
             </p>
         </div>
+
+        <!-- メイン -->
         <article class="main-contents">
+
+            <!-- About me -->
             <section id="about-me">
                 <h2>About Me</h2>
                 <p class="center-align">
-                    ゲーム開発やWEB制作、アプリ開発をしている人です。<br />
+                    ゲーム開発やWEB制作、<br />
+                    アプリ開発をしている人です。<br />
                     制作物などは<a href="">こちら</a><br />
                     その他のプロフィールについては<a href="#about-profile">Profile</a>へ。
                 </p>
             </section>
+
+            <!-- About me - profile -->
+            <section id="about-profile">
+                <h2>Profile</h2>
+                <p class="center-align">
+                    名前: たすくん<br />
+                    年齢: <span class="my-age"></span><br />
+                    大阪電気通信大学<br />
+                    総合情報学部<br />
+                    デジタルゲーム学科に在籍。
+
+                </p>
+            </section>
+
+            <!-- works -->
             <section id="about-works">
                 <h2>Works</h2>
-                <p class="center-align">
-                    今までの制作物はこちら↓
-                </p>
                 <div class="list-container">
                     <ul>
                         <li>
                             <figure class="work-introduction">
-                                <a href="https://qiita.com/tas9n/items/522312d04013f3512f33" target="_blank" rel="noopener noreferrer"><img src="images/works/siv3dxbulletphysics.png" /></a>
+                                <a href="https://qiita.com/tas9n/items/522312d04013f3512f33" target="_blank"
+                                    rel="noopener noreferrer"><img src="images/works/siv3dxbulletphysics.png" /></a>
                                 <figcaption>
                                     <h3>Siv3D x Bullet Physics</h3>
-                                    <p class="center-align">
-                                        オープンソースの物理エンジンであるBullet PhysicsをSiv3Dにて利用したモノを記事にしました。
+                                    <p>
+                                        オープンソースの物理エンジンである、<br />
+                                        Bullet PhysicsをSiv3Dにて<br />
+                                        利用したモノを記事にしました。
                                     </p>
                                 </figcaption>
                             </figure>
                         </li>
-                        
+
                         <li>
                             <figure class="work-introduction">
-                                <a href="https://tas9n.github.io/skskcookie/" target="_blank" rel="noopener noreferrer"><img src="images/works/skskcookie.png" /></a>
+                                <a href="https://tas9n.github.io/skskcookie/" target="_blank"
+                                    rel="noopener noreferrer"><img src="images/works/skskcookie.png" /></a>
                                 <figcaption>
                                     <h3>skskcookie</h3>
-                                    <p class="center-align">
-                                        「しくしくクッキー」です。クッキーをクリックすると、「しくしく」します。
+                                    <p>
+                                        「しくしくクッキー」です。<br />
+                                        クッキーをクリックすると、<br />
+                                        「しくしく」します。
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </li>
+
+                        <li>
+                            <figure class="work-introduction">
+                                <a href="https://oecupc.github.io/opcofficial/" target="_blank"
+                                    rel="noopener noreferrer"><img src="images/works/opcofficialweb.png" /></a>
+                                <figcaption>
+                                    <h3>OECUPC</h3>
+                                    <p>
+                                        僕が所属しているサークル、<br />
+                                        OECUPCの公式WEBサイトの作成を担当しました。
                                     </p>
                                 </figcaption>
                             </figure>
@@ -99,7 +166,7 @@
                                 <a href="" target="_blank" rel="noopener noreferrer"><img src="http://placehold.jp/320x240.png" /></a>
                                 <figcaption>
                                     <h3>ダミー</h3>
-                                    <p class="center-align">
+                                    <p>
                                         ここに説明が入ります。
                                     </p>
                                 </figcaption>
@@ -110,22 +177,17 @@
                     </ul>
                 </div>
             </section>
-            <section id="about-profile">
-                <h2>Profile</h2>
-                <p class="center-align">
-                    名前: たすくん<br />
-                    年齢: <span class="my-age"></span><br />
-                    大阪電気通信大学総合情報学部デジタルゲーム学科に在籍。<br />
-
-                </p>
-            </section>
         </article>
     </main>
+    <!-- フッター -->
     <footer>
         <p class="copyright">
             @2023 Tasuku Nishiguchi
         </p>
-        <a href="https://twitter.com/23_tas9" class="twitter-logo" target="_blank" rel="noopener noreferrer"></a>
+        <div class="sns-list">
+            <a href="https://github.com/tas9n" class="github-logo" target="_blank" rel="noopener noreferrer"></a>
+            <a href="https://twitter.com/23_tas9" class="twitter-logo" target="_blank" rel="noopener noreferrer"></a>
+        </div>
     </footer>
 </body>
 
