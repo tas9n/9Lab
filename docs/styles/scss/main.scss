@@ -119,6 +119,12 @@ main {
     & img{
         width: 320px;
         height: 240px;
+
+        transition: transform 0.25s;
+
+        &:hover{
+            transform: scale(1.05);
+        }
     }
 }
 
