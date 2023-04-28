@@ -115,6 +115,11 @@ main {
     margin: 0 4px;
 
     width: 320px;
+
+    & img{
+        width: 320px;
+        height: 240px;
+    }
 }
 
 @media screen and (max-width: 640px) {
