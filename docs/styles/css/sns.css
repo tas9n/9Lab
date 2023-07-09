@@ -3,6 +3,12 @@
   align-items: center;
   justify-content: space-around;
 }
+.sns-list a {
+  transition: transform 0.5s;
+}
+.sns-list a:hover {
+  transform: scale(1.1);
+}
 
 .twitter-logo {
   display: block;
