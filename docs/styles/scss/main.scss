@@ -36,6 +36,7 @@ h1 {
 }
 h2 {
     font-size: 48px;
+    margin: 8px 0;
 }
 h3 {
     padding-left: 12px;
@@ -81,8 +82,8 @@ main {
         justify-content: center;
 
         flex-flow: column;
-
-        min-height: 50vh;
+        
+        padding: 90px 0;
 
         
         &:nth-child(2n+1) {
@@ -118,6 +119,10 @@ main {
 
     & figcaption{
         width: 100%;
+
+        & h3{
+            margin: 12px 0;
+        }
     }
 
     & img{
